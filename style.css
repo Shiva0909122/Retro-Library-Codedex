@@ -1,0 +1,214 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('90s-bg.png') repeat;
+    color: #000080;
+}
+
+header {
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    color: yellow;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.retro-img {
+    border: 5px solid #ff4500;
+    box-shadow: 0 0 20px #ff4500;
+}
+
+nav {
+    border-bottom: 3px dashed yellow;
+}
+
+button {
+    font-size: 1.2rem;
+    background: linear-gradient(to bottom, #ff4500, #ffa500);
+    color: black;
+    border: 2px dotted #000;
+    text-shadow: 1px 1px 2px white;
+}
+
+footer {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.blinking {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.time-display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: lime;
+    text-shadow: 0 0 10px lime;
+    margin: 10px 0;
+}
+
+.features {
+    background-color: #ffefd5;
+    border: 2px solid #ff4500;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff4500;
+    margin-top: 20px;
+}
+
+.features ul {
+    list-style-type: square;
+    color: #ff4500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply fade-in animation to book cards */
+.card {
+    animation: fadeIn 0.8s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    animation: pulse 0.6s ease-in-out;
+}
+
+/* Search button hover effect */
+#search-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 45%;
+}
+
+#search-btn:hover {
+    background-color: #f39c12;
+    transform: scale(1.1);
+}
+
+#talkingButton {
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    padding: 15px;
+    border: 2px solid #5f3a2f;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #5f3a2f, #c19a6b);
+    background-size: 200% 100%;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-position 0.5s, transform 0.3s;
+}
+
+#talkingButton:hover {
+    background-position: 100% 0;
+    transform: scale(1.05);
+}
+
+#home {
+    height: 100vh;
+}
+
+/* footer form */
+.container-fluid {
+    margin: 100px auto;
+    /* width: 850px; */
+    padding: 30px;
+    border: 5px solid #FF00FF;
+    background: #1111116b;
+        box-shadow: 0 0 20px #00FF00;
+}
+
+.form-control,
+.btn {
+
+    font-size: 18px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #FFF;
+    background: #09000072;
+    color: #FFF;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px #00FF00;
+}
+
+.btn {
+    border: 2px solid #FF00FF;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF00FF, #00FFFF);
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #FFFF00;
+    transform: scale(1.1);
+    color: black;
+}
+
+.form {
+    margin-left: 10%;
+}
+
+h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 5px #FF00FF;
+}
+
+.con {
+    text-shadow: 2px 2px 5px #003cff5e;
+    text-align: center;
+}
+
+label {
+    margin-left: 35%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+a:hover {
+    cursor: pointer;
+    color: #0c935d;
+}
+
+a:active {
+    color: red;
+}

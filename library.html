@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Library Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://media2.giphy.com/media/fXnx6vSSrzY92rTONJ/giphy.webp?cid=790b761103ahty2knvdxu2x728sj6wc527h9t7eetalzbz1y&ep=v1_gifs_search&rid=giphy.webp&ct=g"">
+</head>
+
+<body>
+    <header class="text-center py-3">
+        <marquee behavior="scroll" direction="left" class="h4 blinking">Welcome to the Retro Library Management System!
+        </marquee>
+        <h1 class="mt-2">Library Management System</h1>
+        <div id="time" class="time-display">Loading time...</div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Library90s</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search">Search Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section id="home" class="text-center">
+            <h2>
+                👩🏻‍💻📓✍🏻💡
+                𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒪𝓊𝓇 𝐿𝒾𝒷𝓇𝒶𝓇𝓎 📖📕
+            </h2>
+            <br><br>
+            <img src="https://media2.giphy.com/media/fXnx6vSSrzY92rTONJ/giphy.webp?cid=790b761103ahty2knvdxu2x728sj6wc527h9t7eetalzbz1y&ep=v1_gifs_search&rid=giphy.webp&ct=g"
+                alt="Library" class="img-fluid retro-img">
+            <br>
+            <br><br>
+            <p>Explore, borrow, and manage books with a nostalgic 90s vibe!</p>
+        </section>
+        <section id="about" class="mt-5 text-center">
+            <h3>About Our Library</h3>
+            <p>
+                Established in 1995, our library has been a cornerstone of learning and knowledge for over two decades.
+                With thousands of books, digital resources, and community programs, we are committed to fostering
+                education and creativity.
+            </p>
+            <p>
+                Whether you are a student, a researcher, or simply a lover of books, our library provides an inspiring
+                environment to explore, learn, and grow.
+            </p>
+        </section>
+        <section id="features" class="features">
+            <h3>Features</h3>
+            <ul>
+                <li>Comprehensive catalog of books across various genres.</li>
+                <li>User-friendly search functionality to find your desired books.</li>
+                <li>Interactive dashboard to track borrowed and returned books.</li>
+                <li>Contact support for assistance with library services.</li>
+            </ul>
+        </section>
+        <section id="search" class="mt-5">
+            <h3>Search Books</h3>
+            <div class="input-group mb-3">
+                <input id="search-input" type="text" class="form-control" placeholder="Enter book title or author">
+                <button id="search-btn" class="btn btn-warning">Search</button>
+            </div>
+            <div id="search-results" class="search-results">
+                <p class="text-muted">No results yet. Start searching!</p>
+            </div>
+        </section>
+
+        <section id="dashboard" class="mt-5">
+            <h3>Your Dashboard</h3>
+            <div class="card">
+                <div class="card-header bg-info text-white">Borrowed Books</div>
+                <ul id="borrowed-books" class="list-group list-group-flush">
+                    <li class="list-group-item">"JavaScript for Beginners" - Due: 15th Dec</li>
+                    <li class="list-group-item">"HTML & CSS Design" - Due: 20th Dec</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="coding-books" class="mt-5">
+            <h3>Coding Books</h3>
+            <div class="row" id="coding-books-container">
+                <!-- Books will be dynamically added here -->
+            </div>
+        </section>
+
+        <script src="./script.js"></script>
+        <section id="contact" class="mt-5">
+            <div class="container-fluid">
+                <h3 class="con">▌│█║▌║▌║   🎀  𝒞😻𝓃𝓉𝒶𝒸𝓉 𝒰𝓈  🎀   ║▌║▌║█│▌
+                </h3>
+                <form id="contactForm" class="form">
+                    <!-- Name Field -->
+                    <div class="mb-3">
+                        <br>
+                        <label for="name" class="form-label">You Name ↘️</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label"> Your Email ↘️</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <!-- Message Field -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label"> Send your Message ↘️</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+                    <!-- Send Button -->
+                    <button type="submit" class="btn btn-success">Send</button>
+                </form>
+            </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>© 2024 Retro Library Management | All Rights Reserved | <a href="http://shivarth09.online/" target="_blank">Shivarth Dronachary</a></p>
+    </footer>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--  -->
+<script>
+    // Get form and button elements
+    const form = document.getElementById('contactForm');
+    const sendButton = document.querySelector('.btn');
+
+    // Form submit event listener
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();  // Prevent page reload on submit
+
+        // Get form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Show a retro alert message
+        alert(`🎉 Retro Alert! 🎉\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+        // Speech synthesis for retro fun
+        const speech = new SpeechSynthesisUtterance(`Hey there! We received your message from ${name}. We will get back to you soon.`);
+        speech.lang = "en-US";
+        speech.volume = 1;
+        speech.rate = 1;
+        speech.pitch = 2;  // Fun 90s style pitch
+
+        // Speak the message
+        window.speechSynthesis.speak(speech);
+    });
+</script>
+
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById('time');
+            const now = new Date();
+
+            // Get the current date
+            const dateString = now.toLocaleDateString();
+            // Get the current time
+            const timeString = now.toLocaleTimeString();
+
+            // Set the content of the time element to include both date and time
+            timeElement.textContent = `Date: ${dateString} | Time: ${timeString}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+
+    </script>
+</body>
+
+</html>
