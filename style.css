@@ -1,6 +1,5 @@
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: url('90s-bg.png') repeat;
     color: #000080;
 }
 
@@ -132,9 +131,6 @@ footer {
     transform: scale(1.05);
 }
 
-#home {
-    height: 100vh;
-}
 
 /* footer form */
 .container-fluid {
